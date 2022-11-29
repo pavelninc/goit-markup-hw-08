@@ -1,0 +1,27 @@
+/* колір основного тексту #212121 */
+
+/* вторинний колір тексту #757575 */
+
+/* білий колір #FFFFFF */
+
+/* акцент #2196F3 */
+
+/* основний колір фона #2F303A */
+
+/* вторинний колір фона #F5F4FA */
+
+/* колір блоку герой #2F303A */
+
+:root {
+   --primary-text-color: #212121;
+   --title-text-color: #757575;
+   --accent-color: #2196f3;
+   --white-color: #ffffff;
+   --team-color: #f5f4fa;
+   --secondary-background-color: #2f303a;
+   --footer-text-color: rgba(255, 255, 255, 0.6);
+   --button-color: #188ce8;
+   --portfolio-bgr-color: #f5f5f5;
+   --border-color: #afb1b8;
+   --background-color-hero: #c4c4c4;
+ }

@@ -1,0 +1,35 @@
+ /* Work */
+ 
+ .work {
+   padding-bottom: 94px;
+
+ }
+
+ .work__title {
+   color: var(--primary-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.67;
+   text-align: center;
+   letter-spacing: 0.03em;
+   margin-top: 0;
+   margin-bottom: 50px;
+ }
+ 
+ .work__list {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+
+ .work__item {
+   margin-right: 30px;
+   &:nth-child(3n) {
+      margin-right: 0;
+    }
+ }
+ 
+ 

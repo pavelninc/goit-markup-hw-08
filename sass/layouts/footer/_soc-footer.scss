@@ -1,0 +1,52 @@
+ /* Soc Footer */
+ 
+ .soc {
+   display: block;
+   width: 206px;
+   height: 136px;
+ }
+ .soc__title {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #fff;
+   margin-bottom: 20px;
+   margin: 0;
+   padding: 0;
+   height: 16px;
+   width: 116px;
+   margin-bottom: 20px;
+ }
+ .soc__list {
+   display: flex;
+   gap: 10px;
+   margin: 0;
+   padding: 0;
+ }
+ .soc__item {
+   display: flex;
+   border-radius: 50%;
+ }
+ .soc__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+   background-color: var(--accent-color);
+   }
+ }
+ .soc__icon {
+   fill: #fff;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ 

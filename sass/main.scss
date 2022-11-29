@@ -1,0 +1,35 @@
+
+// utils
+@import './utils/vars';
+
+// Base
+@import './base/reset';
+
+// Components
+@import './components/components';
+
+// Heder
+@import './layouts/header/header-logo';
+@import './layouts/header/site-nav';
+@import './layouts/header/site-contacts';
+// Hero
+@import './layouts/hero';
+
+// Main Studio 
+@import './layouts/studio/advantage';
+@import './layouts/studio/work';
+@import './layouts/studio/team';
+@import './layouts/studio/company';
+
+// Main Portfolio
+@import './layouts/portfolio/button-gallery';
+@import './layouts/portfolio/gallery';
+@import './layouts/portfolio/work-gallery';
+
+// Footer
+@import './layouts/footer/footer';
+@import './layouts/footer/soc-footer';
+@import './layouts/footer/subscription-footer';
+
+// Modal
+@import './layouts/modal';
