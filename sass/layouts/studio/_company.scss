@@ -19,8 +19,10 @@
  .company__list {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    gap: 30px;
  }
+
  
  .company__link {
    width: 106px;
@@ -29,7 +31,7 @@
    display: inline-flex;
    justify-content: center;
    align-items: center;
-   width: 170px;
+   width: 210px;
    height: 92px;
    border: 1px solid var(--border-color);
    border-radius: 5px;
@@ -37,6 +39,24 @@
    &:hover,
    &:focus {
      border-color: var(--accent-color);
+   }
+
+   @media screen and (max-width: 480px ) { 
+      width: calc((100% - 30px) / 2);
+      width: 210px;
+      height: 92px;
+   }
+
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+      width: 226px;
+      height: 92px;    
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+      width: 170px;
+      height: 92px;       
    }
  }
 

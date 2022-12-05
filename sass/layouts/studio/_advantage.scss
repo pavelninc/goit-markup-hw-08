@@ -1,69 +1,89 @@
 /* Advantage */
 
 .advantage {
-   padding-top: 94px;
-   padding-bottom: 94px;
- }
+   padding-bottom: 0;
+}
+.advantage__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
- .advantage__list  {
-   display: flex;
- }
- 
- .advantage__item{
-   flex-basis: 270px;
-   text-align: left;
- }
+.advantage__item {
+  @media screen and (min-width: 767px) {
+    width: 354px;
+    height: 120px;
+  }
 
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    width: 354px;
+    height: 224px;
+  }
 
- .advantage .advantage__item + .advantage__item{
-   margin-left: 30px;
- }
- 
- .advantage__item::before {
-   display: block;
-   content: "";
-   height: 120px;
-   margin-bottom: 30px;
-   border-radius: 4px;
-   background-color: #f5f4fa;
-   background-size: 70px;
-   background-repeat: no-repeat;
-   background-position: center;
- }
- 
- .icon-antena::before {
-   background-image: url(../images/antenna\ .svg);
- }
- 
- .icon-clock::before {
-   background-image: url(../images/clock\ .svg);
- }
- 
- .icon-vector::before {
-   background-image: url(../images/Vector.svg);
- }
- 
- .icon-astronaut::before {
-   background-image: url(../images/astronaut\ .svg);
- }
+  @media screen and (min-width: 1200px) {
+    flex-basis: 270px;
+    width: 354px;
+    height: 248px;
+    .advantage .advantage__item + .advantage__item {
+      margin-left: 30px;
+    }
+  }
+}
 
- 
- .advantage__title {
-   color: var(--primary-text-color);
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   margin-top: 0;
-   margin-bottom: 10px;
- }
- 
- .advantage__text {
-   color: var(--title-text-color);
-   font-size: 14px;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
-   margin-top: 0;
-   margin-bottom: 0;
- }
+.advantage .advantage__item + .advantage__item {
+  // margin-left: 30px;
+}
+
+.advantage__item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antena::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/svg/clock.svg);
+}
+
+.icon-vector::before {
+  background-image: url(../images/svg/vector.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut.svg);
+}
+
+.advantage__title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.advantage__text {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
