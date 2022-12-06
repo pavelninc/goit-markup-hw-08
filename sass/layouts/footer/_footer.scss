@@ -13,17 +13,25 @@ background-color: var(--secondary-background-color);
  @media screen and (min-width:768px) {
     padding-top: 60px;
     padding-bottom: 60px;
+    
     }
 
       @media screen and (min-width:1200px){
-        padding-bottom: 60px;
-
+         padding-top: 60px;
+         padding-bottom: 60px
       }
 }
 
 .footer__container {
+
    @media screen and (min-width:1200px) {
-      display: flex; 
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 1200px;
+      
+      
    }
 }
 
@@ -32,27 +40,49 @@ background-color: var(--secondary-background-color);
 .footer__contact {
 
 @media screen and (min-width:768px) {
-   display: flex;
    justify-content: space-around;
    }
 
    @media screen and (min-width:1200px){
-       gap: 70px;
-   }
+      gap: 83px;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: baseline;   }
+
+
+}
+
+.footer-contact-blok {
+   @media screen and (min-width:768px) {
+      isplay: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      }
 
 
 }
 
 .footer__address {
 
-display: flex;
 flex-direction: column;
 
  @media screen and (max-width:1199px) {
  justify-content: center;
  align-items: center;
- 
+ display: flex;
 }
+
+@media screen and (min-width:1200px) {
+   flex-direction: column;
+   width: 231px;
+   height: 136px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+  }
 
   
 }
@@ -74,11 +104,26 @@ flex-direction: column;
   line-height: 1.19;
 }
 .address {
+
+
    @media screen and (min-width:1200px) {
       width: 231px;
   }
 }
 
+.address__list {
+   @media screen and (min-width:768px) {
+      display: block;
+      text-align: center;
+   }
+   @media screen and (min-width:1200px) {
+      width: 231px;
+      margin: 0;
+      padding: 0;
+      display: block;
+   }
+   
+} 
 .address__link {
   color: var(--white-color);
   font-style: normal;
@@ -108,8 +153,8 @@ flex-direction: column;
   }
   @media screen and (max-width: 767px ) { 
    text-align: center;
-  
 }
+
 }
 
 .address__link-contacts {

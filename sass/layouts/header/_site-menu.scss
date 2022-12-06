@@ -1,0 +1,135 @@
+.menu-button-open {
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button-svg {
+  width: 24px;
+  height: 16px;
+}
+
+.mob-menu {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  > .container {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: auto;
+  }
+}
+
+.menu-button-close {
+   width: 40px;
+   height: 40px;
+   margin-left: auto;
+   display: block;
+   border: none;
+    background-color: transparent; 
+  
+}
+.mob-close-svg {
+   width: 18.67px;
+   height: 18.67px;
+}
+
+.menu-button-close:hover {
+   fill: #2196F3;
+}
+.menu-button-close:focus {
+   fill: #2196F3;
+}
+
+.mob-nav {
+  margin-bottom: 30px;
+}
+.mob-nav-list {
+  margin-left: 25px;
+}
+
+.mob-nav-item {
+   letter-spacing: 0.02em;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-nav-item:hover  .mob-nav-link {
+   color: #2196F3;
+}
+.mob-nav-link:focus {
+   color: #2196F3;
+}
+
+
+.mob-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+
+.mob-cont-list {
+  margin-left: 25px;
+}
+
+.mob-cont-item {
+   margin-bottom: 32px;
+}
+.mob-cont-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mob-cont-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-soc-list {
+   display: flex;
+   margin-left: 25px;
+   margin-top: 32px;
+}
+.mob-soc-list li {
+   border-right: 1px solid rgba(33, 33, 33, 0.2)
+}
+.mob-soc-item {
+   &:first-child { list-style: none;} ;
+   &:not(:first-child){margin-left: 10px; }
+}
+.mob-soc-link {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   letter-spacing: 0.02em;
+   color: #2196F3;
+   margin-right: 10px;
+}
+

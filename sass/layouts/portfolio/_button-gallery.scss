@@ -2,38 +2,12 @@
  
  .filter   {
    display: flex;
-   @media screen and (min-width: 470px ) { 
-      flex-wrap: wrap;
-   }
-
-   @media screen and (min-width: 768px) {
-      justify-content: center;
-   }
-
-   @media screen and (min-width: 1200px) {
-      justify-content: center;
-   }
+   justify-content: center;
  }
-
- .filter  .filter__item + .filter__item {
-   margin-right: 8px;
- }
-  
- .filter__item {
-   margin-right: 8px;
-   @media screen and (max-width: 767px ) { 
-
-      &:nth-child(4n) {
-         margin-left: 0;
-       } 
-      &:nth-last-child(-n +2) {
-         margin-top: 15px;
-       } 
-   }
- }
-
  
-
+ .filter  .filter__item + .filter__item {
+   margin-left: 8px;
+ }
  
  .filter__button {
    background-color: var(--team-color);
@@ -67,4 +41,3 @@
    padding-right: 25px;
    padding-bottom: 6px;
  }
- 
