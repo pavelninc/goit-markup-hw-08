@@ -2,7 +2,6 @@
 .subscription {
  
    @media screen and (min-width: 480px) {
-      display: block;
       text-align: center;
       margin-top: 60px;
       margin-right: auto;
@@ -22,7 +21,6 @@
    }
    
    @media screen and (min-width: 1200px) {
-       display: block;
    }
 }
 .subscription__text {

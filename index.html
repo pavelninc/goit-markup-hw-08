@@ -53,7 +53,7 @@
          <ul class="contacts heder__contacts list">
             <li class="contacts__item">
                <a class="contacts__link link__mail link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
+                  <svg class="contacts__icon-mail" width="16" height="12">
                      <use class="contackts__use" href="./images/svg/icons.svg#mail.svg"></use>
                   </svg>
                   info@devstudio.com
@@ -61,8 +61,8 @@
             </li>
             <li class="contacts__item">
                <a class="contacts__link link__tell link" href="tel:+380961111111">
-                  <svg class="contacts__icon" width="10" height="16">
-                     <use href="./images/svg/icons.svg#phone.svg"></use>
+                  <svg class="contacts__icon-tel" width="10" height="16">
+                     <use class="" href="./images/svg/icons.svg#phone.svg"></use>
                   </svg>
                   +380961111111
                </a>
@@ -83,13 +83,13 @@
                <nav class="mob-nav">
                   <ul class="mob-nav-list list">
                      <li class="mob-nav-item">
-                        <a class="mob-nav-link link" href="./index.html">Студія</a>
+                        <a class="mob-nav-link  current" href="./index.html">Студія</a>
                      </li>
                      <li class="mob-nav-item">
-                        <a class="mob-nav-link link" href="./portfolio.html">Портфоліо</a>
+                        <a class="mob-nav-link " href="./portfolio.html">Портфоліо</a>
                      </li>
                      <li class="mob-nav-item">
-                        <a class="mob-nav-link link" href="">Контакти</a>
+                        <a class="mob-nav-link " href="">Контакти</a>
                      </li>
                   </ul>
                </nav>
@@ -220,7 +220,7 @@
                     ./images/team/igor-demjanenko-mob.jpeg 1x,
                     ./images/team/igor-demjanenko-mob-2x.jpeg 2x
                     " media="(min-width: 320px)" />
-                     <img class="team__img" src="./images/team/igor-demjanenko-mob.jpeg" alt="Ігор Демʼяненко"
+                     <img class="team__img" src="./images/team/igor-demjanenko.jpeg" alt="Ігор Демʼяненко"
                         width="450" />
                   </picture>
                   <div class="team__item">
@@ -272,7 +272,7 @@
                     ./images/team/olga-repina-mob.jpeg 1x,
                     ./images/team/olga-repina-mob-2x.jpeg 2x
                     " media="(min-width: 320px)" />
-                     <img class="team__img" src="./images/team/olga-repina-mob.jpeg" alt="Ольга Рєпіна" width="450" />
+                     <img class="team__img" src="./images/team/olga-repina.jpeg" alt="Ольга Рєпіна" width="450" />
                   </picture>
                   <div class="team__item">
                      <h3 class="team__hero">Ольга Рєпіна</h3>
@@ -323,7 +323,7 @@
                     ./images/team/mikola-tarasov-mob.jpeg 1x,
                     ./images/team/mikola-tarasov-mob-2x.jpeg 2x
                     " media="(min-width: 320px)" />
-                     <img class="team__img" src="./images/team/mikola-tarasov-mob.jpeg" alt="Микола Тарасов"
+                     <img class="team__img" src="./images/team/mikola-tarasov.jpeg" alt="Микола Тарасов"
                         width="450" />
                   </picture>
                   <div class="team__item">
@@ -375,7 +375,7 @@
                     ./images/team/mihailo-ermakov-mob.jpeg 1x,
                     ./images/team/mihailo-ermakov-mob-2x.jpeg 2x
                     " media="(min-width: 320px)" />
-                     <img class="team__img" src="./images/team/mihailo-ermakov-mob.jpeg" alt="Михайло Єрмаков"
+                     <img class="team__img" src="./images/team/mihailo-ermakov.jpeg" alt="Михайло Єрмаков"
                         width="450" />
                   </picture>
 
@@ -556,31 +556,39 @@
          </button>
          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
          <form class="modal__form">
-            <label for="user-name" class="modal__label"><span>Імʼя</span></label>
+            <div class="modal-blok">
+               <label for="user-name" class="modal__label"><span>Імʼя</span></label>
             <div class="modal__wrap">
                <input type="text" name="user-name" class="modal__input" required id="user-name" />
                <svg class="modal__input-icon" width="18px" height="18">
                   <use href="./images/svg/icons.svg#icon-person.svg"></use>
                </svg>
             </div>
-            <label for="user-tell" class="modal__label"><span>Телефон</span></label>
-            <div class="modal__wrap">
-               <input type="tel" name="user-tell" class="modal__input" required id="user-tell" />
-               <svg class="modal__input-icon" width="18px" height="18">
-                  <use href="./images/svg/icons.svg#icon-phone.svg"></use>
-               </svg>
+            </div>            
+            <div class="modal-blok">
+               <label for="user-tell" class="modal__label"><span>Телефон</span></label>
+               <div class="modal__wrap">
+                  <input type="tel" name="user-tell" class="modal__input" required id="user-tell" />
+                  <svg class="modal__input-icon" width="18px" height="18">
+                     <use href="./images/svg/icons.svg#icon-phone.svg"></use>
+                  </svg>
+               </div>
             </div>
-            <label for="user-email" class="modal__label"><span>Пошта</span></label>
-            <div class="modal__wrap">
-               <input type="email" name="user-email" class="modal__input" required id="user-email" />
-               <svg class="modal__input-icon" width="18" height="18">
-                  <use href="./images/svg/icons.svg#icon-email.svg"></use>
-               </svg>
+            <div class="modal-blok">
+               <label for="user-email" class="modal__label"><span>Пошта</span></label>
+               <div class="modal__wrap">
+                  <input type="email" name="user-email" class="modal__input" required id="user-email" />
+                  <svg class="modal__input-icon" width="18" height="18">
+                     <use href="./images/svg/icons.svg#icon-email.svg"></use>
+                  </svg>
+               </div>
             </div>
-            <div class="modal-field">
-               <label for="user-comment" class="modal__label"><span>Коментар</span></label>
-               <textarea name="user-comment" id="user-comment" class="modal__comment"
-                  placeholder="Введіть текст"></textarea>
+            <div class="modal-blok">
+               <div class="modal-field">
+                  <label for="user-comment" class="modal__label"><span>Коментар</span></label>
+                  <textarea name="user-comment" id="user-comment" class="modal__comment"
+                     placeholder="Введіть текст"></textarea>
+               </div>
             </div>
             <div class="modal__chek">
                <input type="checkbox" name="privacy" id="privacy" class="modal__input-check visually-hidden" />
