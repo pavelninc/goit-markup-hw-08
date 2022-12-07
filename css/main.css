@@ -110,8 +110,8 @@ is-hidden {
 }
 @media screen and (min-width: 768px) {
   section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -498,31 +498,31 @@ is-hidden {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--gradient), url(/images/hero/hero-bg-mob-2x.jpeg);
+  background-image: var(--gradient), url(../images/hero/hero-bg-mob.jpeg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__overley {
-    background-image: var(--gradient), url(/images/hero/hero-bg-mob.jpeg);
+    background-image: var(--gradient), url(../images/hero/hero-bg-mob.jpeg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero__overley {
-    background-image: var(--gradient), url(/images/hero/hero-bg-tab-2x.jpeg);
+    background-image: var(--gradient), url(../images/hero/hero-bg-tab-2x.jpeg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__overley {
-    background-image: var(--gradient), url(/images/hero/hero-bg-tab.jpeg);
+    background-image: var(--gradient), url(../images/hero/hero-bg-tab.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__overley {
-    background-image: var(--gradient), url(/images/hero/hero-bg-2x.jpeg);
+    background-image: var(--gradient), url(../images/hero/hero-bg-2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__overley {
-    background-image: var(--gradient), url(/images/hero/hero-bg.jpeg);
+    background-image: var(--gradient), url(../images/hero/hero-bg.jpeg);
   }
 }
 
@@ -837,11 +837,6 @@ is-hidden {
 }
 
 /* Company */
-.company {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .company__title {
   color: var(--primary-text-color);
   font-weight: 700;
